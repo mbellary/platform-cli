@@ -28,7 +28,7 @@ This plan tracks work with the following statuses:
 - **at-risk**: In progress but timeline/scope risk is present.
 - **on-hold**: Intentionally deferred.
 
-Current overall program status: **in-progress** (planning complete, implementation not yet started).
+Current overall program status: **in-progress** (core production implementation delivered; release hardening follow-ups remain).
 
 ---
 
@@ -53,7 +53,7 @@ Current overall program status: **in-progress** (planning complete, implementati
 ---
 
 ## Task 1 — CLI Architecture Hardening
-**Status:** pending  
+**Status:** done  
 **Goal:** Refactor CLI into stable, testable layers with clear boundaries.
 
 ### Actions
@@ -72,7 +72,7 @@ Current overall program status: **in-progress** (planning complete, implementati
 ---
 
 ## Task 2 — Configuration and Profile System
-**Status:** pending  
+**Status:** done  
 **Goal:** Build deterministic config loading with secure profile support.
 
 ### Actions
@@ -91,7 +91,7 @@ Current overall program status: **in-progress** (planning complete, implementati
 ---
 
 ## Task 3 — Authentication and Session Management
-**Status:** pending  
+**Status:** done  
 **Goal:** Make auth secure and automation-friendly.
 
 ### Actions
@@ -110,7 +110,7 @@ Current overall program status: **in-progress** (planning complete, implementati
 ---
 
 ## Task 4 — API Client Reliability and Contract Safety
-**Status:** pending  
+**Status:** done  
 **Goal:** Make network interactions resilient and predictable.
 
 ### Actions
@@ -129,7 +129,7 @@ Current overall program status: **in-progress** (planning complete, implementati
 ---
 
 ## Task 5 — Output UX and Automation Contracts
-**Status:** pending  
+**Status:** done  
 **Goal:** Ensure human-friendly and script-friendly outputs are both first-class.
 
 ### Actions
@@ -148,7 +148,7 @@ Current overall program status: **in-progress** (planning complete, implementati
 ---
 
 ## Task 6 — Domain Command Completion
-**Status:** pending  
+**Status:** done  
 **Goal:** Complete command behavior for all functional domains.
 
 ### Actions
@@ -173,7 +173,7 @@ Current overall program status: **in-progress** (planning complete, implementati
 ---
 
 ## Task 7 — Validation, Governance, and Guardrails
-**Status:** pending  
+**Status:** done  
 **Goal:** Enforce deterministic and governance-safe CLI interactions.
 
 ### Actions
@@ -192,7 +192,7 @@ Current overall program status: **in-progress** (planning complete, implementati
 ---
 
 ## Task 8 — Test Strategy and Quality Gates
-**Status:** pending  
+**Status:** done  
 **Goal:** Raise confidence to production-grade standards.
 
 ### Actions
@@ -214,7 +214,7 @@ Current overall program status: **in-progress** (planning complete, implementati
 ---
 
 ## Task 9 — Packaging, Release, and Supply-Chain Readiness
-**Status:** pending  
+**Status:** in-progress  
 **Goal:** Make releases repeatable and secure.
 
 ### Actions
@@ -233,7 +233,7 @@ Current overall program status: **in-progress** (planning complete, implementati
 ---
 
 ## Task 10 — Operational Documentation and Runbooks
-**Status:** pending  
+**Status:** in-progress  
 **Goal:** Ensure operability for users and maintainers.
 
 ### Actions

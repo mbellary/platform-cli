@@ -1,2 +1,5 @@
-def test_intent_commands_placeholder():
-    assert True
+from platform_cli.commands import intent
+
+
+def test_intent_module_has_app():
+    assert intent.app is not None

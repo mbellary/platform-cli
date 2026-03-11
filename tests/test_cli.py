@@ -1,2 +1,11 @@
-def test_cli_placeholder():
-    assert True
+from typer.testing import CliRunner
+
+from platform_cli.main import app
+
+runner = CliRunner()
+
+
+def test_cli_help():
+    result = runner.invoke(app, ["--help"])
+    assert result.exit_code == 0
+    assert "auth" in result.stdout

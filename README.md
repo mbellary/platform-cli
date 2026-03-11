@@ -1,56 +1,37 @@
-# Platform CLI
+# platform-cli
 
-Command line interface for the Deterministic AI Governance Platform.
+Deterministic governance platform CLI.
 
-## Installation
-
-Using `uv` (recommended):
+## Quickstart
 
 ```bash
-uv sync
+pip install -e .
+platform --help
 ```
 
-Run the CLI:
+## Configuration
 
-```bash
-uv run platform --help
-```
+Configuration precedence: defaults < config file profile < environment variables < CLI flags.
 
-## Development checks
+Default config path: `~/.platform-cli/config.yaml`
 
-```bash
-uv run ruff check .
-uv run pytest
+```yaml
+profiles:
+  default:
+    api_url: https://api.example.com
+    timeout_seconds: 10
+    retry_attempts: 3
+    output: table
 ```
 
 ## Authentication
 
 ```bash
-platform login
+platform auth login --token <token>
+platform auth whoami
+platform auth logout
 ```
 
-## Example Usage
+## Output modes
 
-Submit intent:
-
-```bash
-platform intent create intent.yaml
-```
-
-Inspect plan:
-
-```bash
-platform plan show <plan_id>
-```
-
-Run execution:
-
-```bash
-platform execution start <plan_id>
-```
-
-List artifacts:
-
-```bash
-platform artifact list
-```
+All commands support `--output table|json|yaml`.
