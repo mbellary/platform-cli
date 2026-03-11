@@ -1,0 +1,15 @@
+[project]
+name = "platform-cli"
+version = "0.1.0"
+description = "CLI for deterministic AI governance platform"
+authors = [{name="Platform Team"}]
+dependencies = [
+    "typer",
+    "requests",
+    "pydantic",
+    "rich",
+    "pyyaml"
+]
+
+[project.scripts]
+platform = "platform_cli.main:app"
