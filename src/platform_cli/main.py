@@ -1,12 +1,14 @@
 import typer
 
-from platform_cli.commands import intent
-from platform_cli.commands import plan
-from platform_cli.commands import execution
-from platform_cli.commands import artifact
-from platform_cli.commands import capability
-from platform_cli.commands import registry
-from platform_cli.commands import diagnostics
+from platform_cli.commands import (
+    artifact,
+    capability,
+    diagnostics,
+    execution,
+    intent,
+    plan,
+    registry,
+)
 
 app = typer.Typer()
 

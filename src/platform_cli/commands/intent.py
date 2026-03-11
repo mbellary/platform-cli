@@ -1,5 +1,6 @@
 import typer
 import yaml
+
 from platform_cli.client.api_client import APIClient
 
 app = typer.Typer()
