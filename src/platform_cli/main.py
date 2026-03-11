@@ -2,6 +2,7 @@ import typer
 
 from platform_cli.commands import (
     artifact,
+    auth,
     capability,
     diagnostics,
     execution,
@@ -12,6 +13,7 @@ from platform_cli.commands import (
 
 app = typer.Typer()
 
+app.add_typer(auth.app, name="auth")
 app.add_typer(intent.app, name="intent")
 app.add_typer(plan.app, name="plan")
 app.add_typer(execution.app, name="execution")
