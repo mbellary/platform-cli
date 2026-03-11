@@ -1,4 +1,5 @@
 import requests
+
 from platform_cli.config.loader import load_config
 
 
